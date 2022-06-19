@@ -4,7 +4,7 @@ import colorama
 from colorama import Fore
 import cli
 import time
-from ProgramFiles import tracker
+from ProgramFiles import tracker, passwordcracker
 def title():
     os.system('TITLE Loading...')
     os.system("cls")
@@ -40,6 +40,20 @@ def menu_two():
         cli.main()
     else:
         print("Soon to come")
+        os.system('pause')
+        cli.main()
+
+def menu_four():
+    os.system('cls')
+    os.system('TITLE [DOKKCLI]    Password attacks')
+    print(Fore.RED + "██████╗  ██████╗ ██╗  ██╗██╗  ██╗     ██████╗██╗     ██╗\n██╔══██╗██╔═══██╗██║ ██╔╝██║ ██╔╝    ██╔════╝██║     ██║\n██║  ██║██║   ██║█████╔╝ █████╔╝     ██║     ██║     ██║\n██║  ██║██║   ██║██╔═██╗ ██╔═██╗     ██║     ██║     ██║\n██████╔╝╚██████╔╝██║  ██╗██║  ██╗    ╚██████╗███████╗██║\n\n")
+    menu_select = input(Fore.GREEN + "[1]    Users.\n[2]    Soon to come\n[3]    Soon to come\n[4]    Soon to come\n[5]    Soon to come\n[6]    Soon to come.\n\n")
+    if str(menu_select) == "1":
+        passwordcracker.main()
+        os.system('pause')
+        cli.main()
+    else:
+        print("Soon to come!")
         os.system('pause')
         cli.main()
 
