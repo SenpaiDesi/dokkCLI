@@ -4,6 +4,7 @@ import colorama
 from colorama import Fore
 import cli
 import time
+from ProgramFiles import tracker
 def title():
     os.system('TITLE Loading...')
     os.system("cls")
@@ -26,5 +27,25 @@ def menu_one():
     print(Fore.GREEN + "[INFO] All dependencies installed and tool is ready to use!")
     time.sleep(3)
     print(Fore.RESET + "\n\n")
-    os.system('pause')
     cli.main()
+
+def menu_two():
+    os.system('cls')
+    os.system('TITLE  [DOKKCLI]    Network Attacks:')
+    print(Fore.RED + "██████╗  ██████╗ ██╗  ██╗██╗  ██╗     ██████╗██╗     ██╗\n██╔══██╗██╔═══██╗██║ ██╔╝██║ ██╔╝    ██╔════╝██║     ██║\n██║  ██║██║   ██║█████╔╝ █████╔╝     ██║     ██║     ██║\n██║  ██║██║   ██║██╔═██╗ ██╔═██╗     ██║     ██║     ██║\n██████╔╝╚██████╔╝██║  ██╗██║  ██╗    ╚██████╗███████╗██║\n\n")
+    menu_select = input(Fore.GREEN + "[1]    ipinfo.\n[2]    Soon to come\n[3]    Soon to come\n[4]    Soon to come\n[5]    Soon to come\n[6]    Soon to come.\n\n")
+    if str(menu_select) == "1":
+        tracker.print_record()
+        os.system('pause')
+        cli.main()
+    else:
+        print("Soon to come")
+        os.system('pause')
+        cli.main()
+
+
+def menu_zero():
+    os.system('cls')
+    print(Fore.RED + "██████╗  ██████╗ ██╗  ██╗██╗  ██╗     ██████╗██╗     ██╗\n██╔══██╗██╔═══██╗██║ ██╔╝██║ ██╔╝    ██╔════╝██║     ██║\n██║  ██║██║   ██║█████╔╝ █████╔╝     ██║     ██║     ██║\n██║  ██║██║   ██║██╔═██╗ ██╔═██╗     ██║     ██║     ██║\n██████╔╝╚██████╔╝██║  ██╗██║  ██╗    ╚██████╗███████╗██║\n")
+    print(Fore.RESET + "Thanks for using DOKK CLI!      Made by Senpai_Desi#4108\n")
+    os.system('exit')
