@@ -23,6 +23,8 @@ def main():
         setup.menu_two()
     elif str(menu_select) == "4":
         setup.menu_four()
+    elif str(menu_select) == "6":
+        setup.menu_six()
     elif str(menu_select) == "0":
         setup.menu_zero()
 

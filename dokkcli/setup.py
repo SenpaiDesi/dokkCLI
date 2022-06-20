@@ -4,7 +4,7 @@ import colorama
 from colorama import Fore
 import cli
 import time
-from ProgramFiles import tracker, passwordcracker
+from ProgramFiles import tracker, passwordcracker, about
 def title():
     os.system('TITLE Loading...')
     os.system("cls")
@@ -56,6 +56,13 @@ def menu_four():
         print("Soon to come!")
         os.system('pause')
         cli.main()
+
+def menu_six():
+    os.system('cls')
+    os.system('title [DOKKCLI]    Information')
+    about.info_print()
+    os.system('pause')
+    cli.main()
 
 
 def menu_zero():
