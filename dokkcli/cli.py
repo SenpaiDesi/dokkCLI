@@ -14,17 +14,17 @@ def main():
     print("Select one of the Categories below.\n")
 
     # Get user input for categoy and show the corresponding sub menu.
-    menu_select = input(Fore.GREEN + "[1]    Setup.\n[2]    Network\n[3]    IP Information\n[4]    Password Attacks\n[5]    Anonymous page downloader\n[6]    Information.\n[0]    Exit\n\n")
+    menu_select = input(Fore.GREEN + "[1]    Setup.\n[2]    Network\n[3]    Password Attacks\n[4]    Anonymous page downloader\n[5]    Information.\n[0]    Exit\n\n")
 
     # Showcase submenu
     if str(menu_select) == "1":
          setup.menu_one()
     elif str(menu_select) == "2":
         setup.menu_two()
-    elif str(menu_select) == "4":
-        setup.menu_four()
-    elif str(menu_select) == "6":
-        setup.menu_six()
+    elif str(menu_select) == "3":
+        setup.menu_three()
+    elif str(menu_select) == "5":
+        setup.menu_five()
     elif str(menu_select) == "0":
         setup.menu_zero()
 

@@ -19,7 +19,7 @@ def print_record():
         region_code = rec['region_code']
         timezone = rec['time_zone']
         print(f"[*] Target found {tgt}")
-        print(Fore.RED + f"Information: \nCity: {city}\mArea code: {areacode}\nCountry: {country}\nPostal Code: {postal_code}\nLongtitude: {long}\nLatitude: {lat}\nDma code: {dma_code}\nTimezone: {timezone}\nRegion Code: {region_code} ")
+        print(Fore.RED + f"Information: \nCity: {city}\nArea code: {areacode}\nCountry: {country}\nPostal Code: {postal_code}\nLongtitude: {long}\nLatitude: {lat}\nDma code: {dma_code}\nTimezone: {timezone}\nRegion Code: {region_code} ")
     except OSError:
         print(Fore.RED + "THAT IS NOT A VALID IP ADDRESS. Please use a different one!\n")
         os.system('pause')
