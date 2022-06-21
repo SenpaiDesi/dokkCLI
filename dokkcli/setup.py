@@ -4,11 +4,15 @@ import colorama
 from colorama import Fore
 import cli
 import time
-from ProgramFiles import tracker, passwordcracker, about, zipcracker
+try:
+    from ProgramFiles import tracker, passwordcracker, about, zipcracker
+except ImportError:
+    pass
+
 def title():
     os.system('TITLE Loading...')
     os.system("cls")
-    os.system("yes | pip install colorama --quiet --exists-action ignore")
+    os.system("yes | pip install colorama --quiet --exists-action i")
     os.system("cls")
     os.system("TITLE dokkCLI")
 
