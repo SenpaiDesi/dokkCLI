@@ -4,7 +4,7 @@ from colorama import Fore
 import os
 import pathlib
 import cli
-gi = pygeoip.GeoIP('C:/testfolder/geo.dat')
+gi = pygeoip.GeoIP('C:/okkcli/geo.dat')
 def print_record():
     try:
         tgt = input("Please provide the ip adress:")
