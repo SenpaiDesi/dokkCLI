@@ -13,3 +13,4 @@ If you installed this program for the first time you must set up some things for
 Luckily dokkcli comes with a built in setup function.
 Launch dokkcli and in the menu select option 1.
 This will set everything up for you.
+Make a folder into your c drive called dokkcli  and copy the geo.dat file there.
