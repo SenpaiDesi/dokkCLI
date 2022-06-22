@@ -1,11 +1,14 @@
 # Setup function 
 import os
-import colorama
+try:
+    import colorama
+except ImportError:
+    pass
 from colorama import Fore
 import cli
 import time
 try:
-    from ProgramFiles import tracker, passwordcracker, about, zipcracker
+    from ProgramFiles import tracker, passwordcracker, about, zipcracker, incognito
 except ImportError:
     pass
 
@@ -65,13 +68,19 @@ def menu_three():
         os.system('title [DOKKCLI]    ZIP CRACKER')
         zipcracker.zipfilecrack()
         os.system('pause')
-        cli.main()
-
-
+        cli.main()    
     else:
         print("Soon to come!")
         os.system('pause')
         cli.main()
+    
+def menu_four():
+    os.system('cls')
+    os.system('title [DOKKCLI]    Anon Page downloader.')
+    print(Fore.RED + "██████╗  ██████╗ ██╗  ██╗██╗  ██╗     ██████╗██╗     ██╗\n██╔══██╗██╔═══██╗██║ ██╔╝██║ ██╔╝    ██╔════╝██║     ██║\n██║  ██║██║   ██║█████╔╝ █████╔╝     ██║     ██║     ██║\n██║  ██║██║   ██║██╔═██╗ ██╔═██╗     ██║     ██║     ██║\n██████╔╝╚██████╔╝██║  ██╗██║  ██╗    ╚██████╗███████╗██║\n\n")
+    incognito.visit()
+    os.system('pause')
+    cli.main()
 
 def menu_five():
     os.system('cls')
@@ -84,5 +93,5 @@ def menu_five():
 def menu_zero():
     os.system('cls')
     print(Fore.RED + "██████╗  ██████╗ ██╗  ██╗██╗  ██╗     ██████╗██╗     ██╗\n██╔══██╗██╔═══██╗██║ ██╔╝██║ ██╔╝    ██╔════╝██║     ██║\n██║  ██║██║   ██║█████╔╝ █████╔╝     ██║     ██║     ██║\n██║  ██║██║   ██║██╔═██╗ ██╔═██╗     ██║     ██║     ██║\n██████╔╝╚██████╔╝██║  ██╗██║  ██╗    ╚██████╗███████╗██║\n")
-    print(Fore.RESET + "Thanks for using DOKK CLI!      Made by Senpai_Desi#4108\n")
+    print(Fore.GREEN + "Thanks for using DOKK CLI!      Made by Senpai_Desi#4108\n")
     os.system('exit')
