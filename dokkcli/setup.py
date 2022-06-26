@@ -1,5 +1,6 @@
 # Setup function 
 import os
+
 try:
     import colorama
 except ImportError:
@@ -7,6 +8,7 @@ except ImportError:
 from colorama import Fore
 import cli
 import time
+from ProgramFiles import about
 try:
     from ProgramFiles import tracker, passwordcracker, about, zipcracker, incognito
 except ImportError:
@@ -21,7 +23,8 @@ def title():
 
 
 def startup():
-    print(Fore.RED + "██████╗  ██████╗ ██╗  ██╗██╗  ██╗     ██████╗██╗     ██╗\n██╔══██╗██╔═══██╗██║ ██╔╝██║ ██╔╝    ██╔════╝██║     ██║\n██║  ██║██║   ██║█████╔╝ █████╔╝     ██║     ██║     ██║\n██║  ██║██║   ██║██╔═██╗ ██╔═██╗     ██║     ██║     ██║\n██████╔╝╚██████╔╝██║  ██╗██║  ██╗    ╚██████╗███████╗██║\n")
+    print(Fore.RED + "██████  ██████  ██    ██ \n█   ██ ██   ██ ██    ██\n██████  ██████  ██    ██ \n██   ██ ██   ██ ██    ██\n██████  ██   ██  ██████ \n")
+    print("Based on DOKKCLI at https://github.com/SenpaiDesi/dokkCLI")
     print(Fore.RESET + "\n")
     print("Welcome to dokkcli, if this is your first time using this software. Please use module 1 Setup. \n")
 
@@ -39,8 +42,9 @@ def menu_one():
 
 def menu_two():
     os.system('cls')
-    os.system('TITLE  [DOKKCLI]    Network Attacks:')
-    print(Fore.RED + "██████╗  ██████╗ ██╗  ██╗██╗  ██╗     ██████╗██╗     ██╗\n██╔══██╗██╔═══██╗██║ ██╔╝██║ ██╔╝    ██╔════╝██║     ██║\n██║  ██║██║   ██║█████╔╝ █████╔╝     ██║     ██║     ██║\n██║  ██║██║   ██║██╔═██╗ ██╔═██╗     ██║     ██║     ██║\n██████╔╝╚██████╔╝██║  ██╗██║  ██╗    ╚██████╗███████╗██║\n\n")
+    os.system('TITLE BRU  [DOKKCLI]    Network Attacks:')
+    print(Fore.RED + "██████  ██████  ██    ██ \n█   ██ ██   ██ ██    ██\n██████  ██████  ██    ██ \n██   ██ ██   ██ ██    ██\n██████  ██   ██  ██████ \n")
+    print("Based on DOKKCLI at https://github.com/SenpaiDesi/dokkCLI")
     menu_select = input(Fore.GREEN + "[1]    ipinfo.\n[2]    Soon to come\n[3]    Soon to come\n[4]    Soon to come\n[5]    Soon to come\n[6]    Soon to come.\n\n")
     if str(menu_select) == "1":
         tracker.print_record()
@@ -54,8 +58,9 @@ def menu_two():
 # password related menu
 def menu_three():
     os.system('cls')
-    os.system('TITLE [DOKKCLI]    Password attacks')
-    print(Fore.RED + "██████╗  ██████╗ ██╗  ██╗██╗  ██╗     ██████╗██╗     ██╗\n██╔══██╗██╔═══██╗██║ ██╔╝██║ ██╔╝    ██╔════╝██║     ██║\n██║  ██║██║   ██║█████╔╝ █████╔╝     ██║     ██║     ██║\n██║  ██║██║   ██║██╔═██╗ ██╔═██╗     ██║     ██║     ██║\n██████╔╝╚██████╔╝██║  ██╗██║  ██╗    ╚██████╗███████╗██║\n\n")
+    os.system('TITLE BRU [DOKKCLI]    Password attacks')
+    print(Fore.RED + "██████  ██████  ██    ██ \n█   ██ ██   ██ ██    ██\n██████  ██████  ██    ██ \n██   ██ ██   ██ ██    ██\n██████  ██   ██  ██████ \n")
+    print("Based on DOKKCLI at https://github.com/SenpaiDesi/dokkCLI")
     menu_select = input(Fore.GREEN + "[1]    Users.\n[2]    Zip files\n[3]    Soon to come\n[4]    Soon to come\n[5]    Soon to come\n[6]    Soon to come.\n\n")
     # User password cracker software which compares hashes.
     if str(menu_select) == "1":
@@ -76,15 +81,16 @@ def menu_three():
     
 def menu_four():
     os.system('cls')
-    os.system('title [DOKKCLI]    Anon Page downloader.')
-    print(Fore.RED + "██████╗  ██████╗ ██╗  ██╗██╗  ██╗     ██████╗██╗     ██╗\n██╔══██╗██╔═══██╗██║ ██╔╝██║ ██╔╝    ██╔════╝██║     ██║\n██║  ██║██║   ██║█████╔╝ █████╔╝     ██║     ██║     ██║\n██║  ██║██║   ██║██╔═██╗ ██╔═██╗     ██║     ██║     ██║\n██████╔╝╚██████╔╝██║  ██╗██║  ██╗    ╚██████╗███████╗██║\n\n")
+    os.system('title BRU [DOKKCLI]    Anon Page downloader.')
+    print(Fore.RED + "██████  ██████  ██    ██ \n█   ██ ██   ██ ██    ██\n██████  ██████  ██    ██ \n██   ██ ██   ██ ██    ██\n██████  ██   ██  ██████ \n")
+    print("Based on DOKKCLI at https://github.com/SenpaiDesi/dokkCLI")
     incognito.visit()
     os.system('pause')
     cli.main()
 
 def menu_five():
     os.system('cls')
-    os.system('title [DOKKCLI]    Information')
+    os.system('title BRU [DOKKCLI]    Information')
     about.info_print()
     os.system('pause')
     cli.main()
@@ -92,6 +98,7 @@ def menu_five():
 
 def menu_zero():
     os.system('cls')
-    print(Fore.RED + "██████╗  ██████╗ ██╗  ██╗██╗  ██╗     ██████╗██╗     ██╗\n██╔══██╗██╔═══██╗██║ ██╔╝██║ ██╔╝    ██╔════╝██║     ██║\n██║  ██║██║   ██║█████╔╝ █████╔╝     ██║     ██║     ██║\n██║  ██║██║   ██║██╔═██╗ ██╔═██╗     ██║     ██║     ██║\n██████╔╝╚██████╔╝██║  ██╗██║  ██╗    ╚██████╗███████╗██║\n")
-    print(Fore.GREEN + "Thanks for using DOKK CLI!      Made by Senpai_Desi#4108\n")
+    print(Fore.RED + "██████  ██████  ██    ██ \n█   ██ ██   ██ ██    ██\n██████  ██████  ██    ██ \n██   ██ ██   ██ ██    ██\n██████  ██   ██  ██████ \n")
+    print("Based on DOKKCLI at https://github.com/SenpaiDesi/dokkCLI")
+    print(Fore.GREEN + "Thanks for using BRUR - DOKK CLI!      Made by Senpai_Desi#4108\n")
     os.system('exit')
