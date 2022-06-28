@@ -1,5 +1,5 @@
 # dokkCLI
-DOKKCLI is a Python hacking application designed for portable and fast deployment.
+bru-cli DOKKCLI is a licensed Python hacking application designed for portable and fast deployment.
 Covering a large set of tools and automated setup to provide you access anywhere at anytime.
 
 
@@ -16,4 +16,4 @@ If you do decide to change that you will have to edit tracker.py and replace the
 
 If you use the zip instead:
 Please replace the geo.dat file path in tracker.py into the path where you extracted the zip. 
-For example: C:\Users\YourName\Desktop\dokkcli\programfiles\geo.dat
+For example: C:\Users\YourName\Desktop\dokbruclikcli\programfiles\geo.dat
