@@ -17,3 +17,11 @@ If you do decide to change that you will have to edit tracker.py and replace the
 If you use the zip instead:
 Please replace the geo.dat file path in tracker.py into the path where you extracted the zip. 
 For example: C:\Users\YourName\Desktop\dokkcli\programfiles\geo.dat
+
+
+# DISCLAIMER
+I am under no way liable for any actions taken by you or any other entitiy using this software.
+Everything you do with this is your own responsibility and I do not take such responsibility for you.
+Use at your own risk!
+
+THIS TOOL IS DEVELOPED FOR THE WHITE SIDE OF HACKING AND PEN TESTING. DO NOT USE IT  FOR THE DARK FORCE.
