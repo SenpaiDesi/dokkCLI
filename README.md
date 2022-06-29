@@ -1,5 +1,5 @@
 # dokkCLI
-DOKKCLI is a Python hacking application designed for portable and fast deployment.
+DOKKCLI is a Python multi tool application designed for portable and fast deployment.
 Covering a large set of tools and automated setup to provide you access anywhere at anytime.
 
 
