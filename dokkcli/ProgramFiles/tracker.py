@@ -4,7 +4,7 @@ import os
 import pathlib
 import cli
 try:
-    gi = pygeoip.GeoIP('geo.dat')
+    gi = pygeoip.GeoIP('C:\dokkcli\geo.dat')
 except FileNotFoundError:
     print("ERROR please move geo.dat from the dokkcli/ProgramFiles folder to C:/dokkcli/geo.dat")
     os.abort()
