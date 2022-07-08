@@ -1,10 +1,7 @@
 import zipfile
 from tqdm import tqdm
 
-# title screen
-print("*"  * 100 + "")
-print("Zip cracker made by Senpai_Desi\n")
-print("*" * 100)
+
 
 
 def zipfilecrack():

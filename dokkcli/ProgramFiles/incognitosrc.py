@@ -1,4 +1,6 @@
 from http import cookiejar
+
+
 try:
     import mechanize
 except ImportError:
