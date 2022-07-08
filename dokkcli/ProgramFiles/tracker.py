@@ -1,10 +1,13 @@
-from typing import Type
 import pygeoip
 from colorama import Fore
 import os
 import pathlib
 import cli
-gi = pygeoip.GeoIP('C:/okkcli/geo.dat')
+try:
+    gi = pygeoip.GeoIP('geo.dat')
+except FileNotFoundError:
+    print("ERROR please move geo.dat from the dokkcli/ProgramFiles folder to C:/dokkcli/geo.dat")
+    os.abort()
 def print_record():
     try:
         tgt = input("Please provide the ip adress:")
