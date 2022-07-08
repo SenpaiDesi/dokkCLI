@@ -32,7 +32,7 @@ def main():
         elif str(hack_menu_select) == "4":
             setup.hack_menu_four()
         elif str(hack_menu_select) == "5":
-            setup.menu_undefined()
+            setup.menu_five()
         elif str(hack_menu_select) == "0":
             setup.hack_menu_zero()
 

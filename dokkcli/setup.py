@@ -86,6 +86,7 @@ def hack_menu_four():
 
 def hack_menu_zero():
     os.system('cls')
+    print("Sorry this does not exist yet. Soon to come!")
     cli.main()
 
 
