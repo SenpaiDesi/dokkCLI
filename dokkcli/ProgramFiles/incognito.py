@@ -1,4 +1,4 @@
-from incognito_src import *
+from ProgramFiles.incognitosrc import anonBrowser
 ab = anonBrowser(proxies=[], user_agents=[('User-Agents','superSecretBrowser')])
 
 def visit():

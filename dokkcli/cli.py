@@ -42,7 +42,7 @@ def main():
     elif str(menu_select) == "5":
         setup.menu_five()
     elif str(menu_select) == "0":
-        setup.menu_undefined()
+        setup.menu_zero()
 
 
 if __name__ == "__main__":

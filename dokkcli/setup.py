@@ -8,10 +8,7 @@ from colorama import Fore
 import cli
 import time
 from ProgramFiles import information
-try:
-    from ProgramFiles import tracker, passwordcracker, zipcracker, incognito
-except ImportError:
-    pass
+from ProgramFiles import tracker, passwordcracker, zipcracker, incognito
 
 def title():
     os.system('TITLE Loading...')
