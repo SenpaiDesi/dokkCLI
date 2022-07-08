@@ -7,8 +7,9 @@ except ImportError:
 from colorama import Fore
 import cli
 import time
+from ProgramFiles import information
 try:
-    from ProgramFiles import tracker, passwordcracker, about, zipcracker, incognito
+    from ProgramFiles import tracker, passwordcracker, zipcracker, incognito
 except ImportError:
     pass
 
@@ -105,7 +106,7 @@ def menu_zero():
 def menu_five():
     os.system('cls')
     os.system('title [DOKKCLI]    Information')
-    about.info_print()
+    information.information_printer()
     os.system('pause')
     cli.main()
 
