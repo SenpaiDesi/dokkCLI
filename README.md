@@ -20,7 +20,7 @@ For example: C:\Users\YourName\Desktop\dokkcli\programfiles\geo.dat
 
 
 # DISCLAIMER
-I am under no way liable for any actions taken by you or any other entitiy using this software.
+I am under no way liable for any actions taken by you or any other entity using this software.
 Everything you do with this is your own responsibility and I do not take such responsibility for you.
 Use at your own risk!
 
