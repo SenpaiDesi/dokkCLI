@@ -1,10 +1,12 @@
 # Setup function 
 import os
 from colorama import Fore
+from colorama.ansi import clear_screen
 import cli
 import time
+import subprocess
 from ProgramFiles import information
-from ProgramFiles import tracker, passwordcracker, zipcracker, incognito, calendar, QRCGEN, QRCReader
+from ProgramFiles import tracker, passwordcracker, zipcracker, incognito, calendar, QRCGEN, QRCReader, remoteshellserv, remoteshellclient, portscan
 
 def title():
     os.system('TITLE Loading...')
@@ -28,9 +30,28 @@ def hack_menu_one():
     os.system('cls')
     os.system('TITLE  [DOKKCLI]    Network Attacks:')
     print(Fore.RED + "██████╗  ██████╗ ██╗  ██╗██╗  ██╗     ██████╗██╗     ██╗\n██╔══██╗██╔═══██╗██║ ██╔╝██║ ██╔╝    ██╔════╝██║     ██║\n██║  ██║██║   ██║█████╔╝ █████╔╝     ██║     ██║     ██║\n██║  ██║██║   ██║██╔═██╗ ██╔═██╗     ██║     ██║     ██║\n██████╔╝╚██████╔╝██║  ██╗██║  ██╗    ╚██████╗███████╗██║\n\n")
-    menu_select = input(Fore.GREEN + "[1]    ipinfo.\n[2]    Soon to come\n[3]    Soon to come\n[4]    Soon to come\n[5]    Soon to come\n[6]    Soon to come.\n\n")
+    menu_select = input(Fore.GREEN + "[1]    ipinfo.\n[2]    Remote shell\n[3]    Port Scanner\n[4]    Soon to come\n[5]    Soon to come\n[6]    Soon to come.\n\n")
     if str(menu_select) == "1":
         tracker.print_record()
+        os.system('pause')
+        cli.main()
+    if str(menu_select) == "2":
+        os.system('cls')
+        os.system('TITLE  [DOKKCLI]    Remote shell Attacks:')
+        print(Fore.RED + "██████╗  ██████╗ ██╗  ██╗██╗  ██╗     ██████╗██╗     ██╗\n██╔══██╗██╔═══██╗██║ ██╔╝██║ ██╔╝    ██╔════╝██║     ██║\n██║  ██║██║   ██║█████╔╝ █████╔╝     ██║     ██║     ██║\n██║  ██║██║   ██║██╔═██╗ ██╔═██╗     ██║     ██║     ██║\n██████╔╝╚██████╔╝██║  ██╗██║  ██╗    ╚██████╗███████╗██║\n\n")
+        remoteshell_men = input(Fore.GREEN + "[1]    Remote shell Server\n[2]    Remote Shell Client.\n")
+        if str(remoteshell_men) == "1":
+            os.system('cls')
+            remoteshellserv.Listen()
+            os.system('pause')
+            cli.main()
+        elif str(remoteshell_men) == "2":
+            remoteshellserverip = input("Enter remote shell server ip: ")
+            remoteshellclient.clientcon(str(remoteshellserverip))
+            cli.main()
+    if str(menu_select) == "3":
+        os.system('cls')
+        portscan.scan()
         os.system('pause')
         cli.main()
     else:
