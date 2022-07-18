@@ -27,7 +27,7 @@ def StartCalendar():
 def showCalender():
     gui = Tk()
     gui.config(background='black')
-    gui.title("DoKKCLI Calendar")
+    gui.title("DOKKCLI Calendar")
     gui.geometry("550x580")
     year = int(year_field.get())
     gui_content= calendar.calendar(year)
