@@ -35,13 +35,13 @@ def scan():
             s.close()
          
     except KeyboardInterrupt:
-        print("\n Exiting Program !!!!")
+        print("\n Exiting program.")
         sys.exit()
     except gaierror:
-        print("\n Hostname Could Not Be Resolved !!!!")
+        print("\n Hostname could not be resolved.")
         sys.exit()
     except error:
-        print("\ Server not responding !!!!")
+        print("\n Server is not responding.")
         sys.exit()
 
     #check time again
